@@ -69,4 +69,19 @@ int main(int argc, char* argv[])
 
 		printf("Answer: %d\n", answerPart2);
 	}
+
+	// Part 2 - alternate
+	{
+		int answerPart2 = 0;
+
+		for (int index = 0; index < inputs.size() - 3; index++)
+		{
+			int currentSum = inputs[index + 3] - inputs[index];
+
+			if (currentSum > 0)
+				answerPart2++;
+		}
+
+		printf("Answer: %d\n", answerPart2);
+	}
 }
