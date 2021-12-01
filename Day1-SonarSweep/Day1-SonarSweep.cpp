@@ -71,6 +71,29 @@ int main(int argc, char* argv[])
 	}
 
 	// Part 2 - alternate
+	/*
+		Original puzzle example 
+		199
+		200
+		208
+		210
+
+		Lets label the numbers as:
+		199  A
+		200  B
+		208  C
+		210  D
+
+		For part 2 you take groups of numbers and check if the sum of them was bigger than the sum of the last group so if we look at the example the first calculation would be:
+
+		(D + B + C) - (A + B + C)
+
+		But you can see that B and C cancel each other out so we can just do 
+
+		D - A 
+
+		and check if the result is positive, if true then we have increased	
+	*/
 	{
 		int answerPart2 = 0;
 
