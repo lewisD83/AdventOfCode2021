@@ -36,17 +36,14 @@ int main(int argc, char* argv[])
 
 	// Part 1
 	{
-		int previousReading = inputs[0];
 		int answer = 0;
 
-		for (int index = 1; index < inputs.size(); index++)
+		for (int index = 0; index < inputs.size() - 1; index++)
 		{
-			int currentReading = inputs[index];
+			int currentReading = inputs[index+1] - inputs[index];
 
-			if (currentReading > previousReading)
+			if (currentReading > 0)
 				answer++;
-
-			previousReading = currentReading;
 		}
 
 		printf("Answer: %d\n", answer);
